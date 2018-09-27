@@ -1,15 +1,13 @@
-package main.com.vclab.springweb.controller;
+package com.vclab.springweb.controller;
 
-import com.sun.corba.se.spi.presentation.rmi.StubAdapter;
-import main.com.vclab.springweb.model.Customer;
-import main.com.vclab.springweb.service.CustomerService;
+import com.vclab.springweb.model.Customer;
+import com.vclab.springweb.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import java.util.ArrayList;

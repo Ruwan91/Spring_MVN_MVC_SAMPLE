@@ -1,4 +1,4 @@
-package main.com.vclab.springweb.configuration;
+package com.vclab.springweb.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

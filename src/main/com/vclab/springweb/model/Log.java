@@ -1,4 +1,4 @@
-package main.com.vclab.springweb.model;
+package com.vclab.springweb.model;
 
 import javax.persistence.*;
 import java.util.Date;

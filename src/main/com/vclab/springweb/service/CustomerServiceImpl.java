@@ -1,7 +1,7 @@
-package main.com.vclab.springweb.service;
+package com.vclab.springweb.service;
 
-import main.com.vclab.springweb.model.Customer;
-import main.com.vclab.springweb.dao.CustomerDao;
+import com.vclab.springweb.model.Customer;
+import com.vclab.springweb.dao.CustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,6 +1,6 @@
-package main.com.vclab.springweb.dao;
+package com.vclab.springweb.dao;
 
-import main.com.vclab.springweb.model.Customer;
+import com.vclab.springweb.model.Customer;
 
 import java.util.List;
 

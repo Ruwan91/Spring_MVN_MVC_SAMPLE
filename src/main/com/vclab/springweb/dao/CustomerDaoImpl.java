@@ -1,6 +1,6 @@
-package main.com.vclab.springweb.dao;
+package com.vclab.springweb.dao;
 
-import main.com.vclab.springweb.model.Customer;
+import com.vclab.springweb.model.Customer;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;

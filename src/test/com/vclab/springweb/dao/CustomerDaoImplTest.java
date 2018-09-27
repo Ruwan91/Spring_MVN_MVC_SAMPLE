@@ -1,10 +1,8 @@
 package com.vclab.springweb.dao;
 
-import org.dbunit.dataset.FilteredDataSet;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

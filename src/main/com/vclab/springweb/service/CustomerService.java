@@ -1,6 +1,6 @@
-package main.com.vclab.springweb.service;
+package com.vclab.springweb.service;
 
-import main.com.vclab.springweb.model.Customer;
+import com.vclab.springweb.model.Customer;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package main.com.vclab.springweb.dao;
+package com.vclab.springweb.dao;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
