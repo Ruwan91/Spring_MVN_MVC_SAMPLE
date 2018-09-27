@@ -16,7 +16,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = "{com.vclab.springweb.configuration}")
+@ComponentScan(basePackages = "{com.vclab.springweb.dao}")
 public class HibernateTestConfiguration {
 
     @Autowired

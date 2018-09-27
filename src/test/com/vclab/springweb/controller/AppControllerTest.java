@@ -15,6 +15,10 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 public class AppControllerTest {
 
     private final static Integer CUST_ID = 1;
@@ -39,7 +43,15 @@ public class AppControllerTest {
     @BeforeClass
     public void setUp(){
         MockitoAnnotations.initMocks(this);
-        customers= customerService.getAllCustomers();
+        customers= getAllCustomers();
+    }
+
+    @Test
+    public void listEmployees(){
+        when(customerService.getAllCustomers()).thenReturn(customers);
+        Assert.assertEquals(appController.getAllCustomer(),"customerlist");
+        Assert.assertEquals(modelMap.get("customerlist"),customers);
+        verify(customerService,atLeastOnce()).getAllCustomers();
     }
 
     @Test
@@ -51,6 +63,25 @@ public class AppControllerTest {
         Assert.assertTrue(customer.getActive()==true,"Customer is available in controller...");
     }
 
+
+    public List<main.com.vclab.springweb.model.Customer> getAllCustomers() {
+        Customer customer=new Customer();
+        customer.setCid(1);
+        customer.setName("Ruwan Peiris");
+        customer.setAddress("Moratuwa");
+        customer.setNic("123456789V");
+        customer.setActive(true);
+
+        Customer customer2=new Customer();
+        customer2.setCid(2);
+        customer2.setName("Yasiru Perera");
+        customer2.setAddress("Colombo");
+        customer2.setNic("789456123VV");
+        customer2.setActive(true);
+        customers.add(customer);
+        customers.add(customer2);
+        return customers;
+    }
 
 
 }

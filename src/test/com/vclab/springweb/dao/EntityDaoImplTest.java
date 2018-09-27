@@ -11,7 +11,6 @@ import org.springframework.test.context.testng.AbstractTransactionalTestNGSpring
 import org.testng.annotations.BeforeMethod;
 
 import javax.sql.DataSource;
-import java.sql.SQLException;
 
 @ContextConfiguration(classes = {HibernateTestConfiguration.class})
 public abstract class EntityDaoImplTest extends AbstractTransactionalTestNGSpringContextTests {

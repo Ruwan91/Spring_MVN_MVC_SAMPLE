@@ -1,11 +1,9 @@
 package com.vclab.springweb.service;
 
 import main.com.vclab.springweb.model.Customer;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.Spy;
+import org.mockito.*;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -14,6 +12,7 @@ import java.util.List;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class CustomerServiceImplTest {
 
@@ -32,6 +31,14 @@ public class CustomerServiceImplTest {
     @Spy
     List<main.com.vclab.springweb.model.Customer> customers = new ArrayList<Customer>();
 
+    @BeforeClass
+    public void setUp(){
+        MockitoAnnotations.initMocks(this);
+        customers=getCustomerList();
+    }
+
+
+
     @Test
     public void saveCustomer(Customer customer){
         Mockito.doNothing().when(customerDao).saveCustomer(any(Customer.class));
@@ -44,5 +51,29 @@ public class CustomerServiceImplTest {
 //        Assert.assertTrue(customer.getActive()==true,"Customer is available in service...");
     }
 
+    @Test
+    public void findAllCustomers(){
+        when(customerDao.getAllCustomers()).thenReturn(customers);
+        Assert.assertEquals(customerService.getAllCustomers(),customers);
+    }
+
+    private List<Customer> getCustomerList() {
+        Customer customer=new Customer();
+        customer.setCid(1);
+        customer.setName("Ruwan Peiris");
+        customer.setAddress("Moratuwa");
+        customer.setNic("123456789V");
+        customer.setActive(true);
+
+        Customer customer2=new Customer();
+        customer2.setCid(2);
+        customer2.setName("Yasiru Perera");
+        customer2.setAddress("Colombo");
+        customer2.setNic("789456123VV");
+        customer2.setActive(true);
+        customers.add(customer);
+        customers.add(customer2);
+        return customers;
+    }
 
 }

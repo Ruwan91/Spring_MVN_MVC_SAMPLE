@@ -25,6 +25,7 @@ public class CustomerDaoImplTest extends EntityDaoImplTest {
     @Test
     public void findById(){
         Assert.assertNotNull(customerDao.findCustomerById(1));
+        Assert.assertNotNull(customerDao.findCustomerById(3));
     }
 
     @Test
@@ -33,10 +34,10 @@ public class CustomerDaoImplTest extends EntityDaoImplTest {
     }
 
     public main.com.vclab.springweb.model.Customer getSampleCutomer() {
-        customer.setCid(2);
-        customer.setName("Kasun");
-        customer.setAddress("Moratuwa");
-        customer.setNic("215487856V");
+        customer.setCid(5);
+        customer.setName("Kevin Perera");
+        customer.setAddress("Mt Lavina");
+        customer.setNic("823476769V");
         customer.setActive(true);
         return customer;
     }
