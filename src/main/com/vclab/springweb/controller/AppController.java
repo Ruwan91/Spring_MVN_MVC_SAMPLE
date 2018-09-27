@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 
 @Controller
 @RequestMapping("/test")
@@ -45,17 +46,22 @@ public class AppController {
         }
     }
 
-    //Calling to the post request to save customer details form submission time
-//    @RequestMapping(value = {"/customerList"},method = RequestMethod.POST)
-//    public String getAllCustomer(@Valid Customer customer, BindingResult result,
-//                                  ModelMap model){
-//        if(result.hasErrors()){
-//            return "home";
-//        }else {
-//            customerService.saveCustomer(customer);
-//            model.addAttribute("success","Customer "+ customer.getName()+" saved successfully...");
-//            return "custome_reg";
-//        }
-//    }
+    //Calling to the get request to get all customer details
+    @RequestMapping(value = {"/allcustomers"},method = RequestMethod.GET)
+    public ModelMap getAllCustomer(){
+        ArrayList<Customer> customers=getCustomerList();
+        ModelMap map=new ModelMap();
+        if(customers.isEmpty()){
+            map.addAttribute("customerlist",null);
+            return map;
+        }else{
+            map.addAttribute("customerlist",customers);
+            return map;
+        }
+    }
+
+    private ArrayList<main.com.vclab.springweb.model.Customer> getCustomerList() {
+        return (ArrayList<Customer>) customerService.getAllCustomers();
+    }
 
 }
