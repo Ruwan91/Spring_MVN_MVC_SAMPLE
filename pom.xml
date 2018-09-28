@@ -19,7 +19,7 @@
     <testng.version>6.9.4</testng.version>
     <mockito.version>1.10.19</mockito.version>
     <h2.version>1.4.187</h2.version>
-    <dbunit.version>2.4.3</dbunit.version>
+    <dbunit.version>2.2</dbunit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -137,7 +137,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.dbunit</groupId>
+      <groupId>dbunit</groupId>
       <artifactId>dbunit</artifactId>
       <version>${dbunit.version}</version>
       <scope>test</scope>
