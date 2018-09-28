@@ -1,6 +1,6 @@
 package com.vclab.springweb.service;
 
-import main.com.vclab.springweb.model.Customer;
+import com.vclab.springweb.model.Customer;
 import org.mockito.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -23,13 +23,13 @@ public class CustomerServiceImplTest {
     private final static Boolean status = true;
 
     @Mock
-    main.com.vclab.springweb.dao.CustomerDao customerDao;
+    com.vclab.springweb.dao.CustomerDao customerDao;
 
     @InjectMocks
-    main.com.vclab.springweb.service.CustomerServiceImpl customerService;
+    com.vclab.springweb.service.CustomerServiceImpl customerService;
 
     @Spy
-    List<main.com.vclab.springweb.model.Customer> customers = new ArrayList<Customer>();
+    List<com.vclab.springweb.model.Customer> customers = new ArrayList<Customer>();
 
     @BeforeClass
     public void setUp(){

@@ -1,8 +1,7 @@
 package com.vclab.springweb.controller;
 
-import main.com.vclab.springweb.controller.AppController;
-import main.com.vclab.springweb.model.Customer;
-import main.com.vclab.springweb.service.CustomerService;
+import com.vclab.springweb.model.Customer;
+import com.vclab.springweb.service.CustomerService;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -15,9 +14,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class AppControllerTest {
 
@@ -64,7 +61,7 @@ public class AppControllerTest {
     }
 
 
-    public List<main.com.vclab.springweb.model.Customer> getAllCustomers() {
+    public List<com.vclab.springweb.model.Customer> getAllCustomers() {
         Customer customer=new Customer();
         customer.setCid(1);
         customer.setName("Ruwan Peiris");

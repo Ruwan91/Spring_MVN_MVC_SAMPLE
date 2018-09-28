@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 public class CustomerDaoImplTest extends EntityDaoImplTest {
 
     @Autowired
-    main.com.vclab.springweb.dao.CustomerDao customerDao;
+    com.vclab.springweb.dao.CustomerDao customerDao;
 
     @Autowired
-    main.com.vclab.springweb.model.Customer customer;
+    com.vclab.springweb.model.Customer customer;
 
     @Override
     protected IDataSet getDataSet() throws Exception {
@@ -31,7 +31,7 @@ public class CustomerDaoImplTest extends EntityDaoImplTest {
         customerDao.saveCustomer(getSampleCutomer());
     }
 
-    public main.com.vclab.springweb.model.Customer getSampleCutomer() {
+    public com.vclab.springweb.model.Customer getSampleCutomer() {
         customer.setCid(5);
         customer.setName("Kevin Perera");
         customer.setAddress("Mt Lavina");
