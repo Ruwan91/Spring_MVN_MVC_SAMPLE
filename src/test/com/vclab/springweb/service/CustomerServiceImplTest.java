@@ -16,11 +16,11 @@ import static org.mockito.Mockito.when;
 
 public class CustomerServiceImplTest {
 
-    private static final Integer CUST_ID = 1;
-    private final static String CUST_NAME = "Ruwan Peiris";
-    private final static String ADDRESS = "Moratuwa";
-    private final static String NIC = "123456789V";
-    private final static Boolean status = true;
+    //private static final Integer CUST_ID = 1;
+    //private final static String CUST_NAME = "Ruwan Peiris";
+    //private final static String ADDRESS = "Moratuwa";
+    //private final static String NIC = "123456789V";
+    //private final static Boolean status = true;
 
     @Mock
     com.vclab.springweb.dao.CustomerDao customerDao;
