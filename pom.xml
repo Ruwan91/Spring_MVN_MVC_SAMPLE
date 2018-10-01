@@ -21,6 +21,7 @@
     <h2.version>1.4.187</h2.version>
     <dbunit.version>2.2</dbunit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
@@ -149,6 +150,12 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.5.3</version>
+    </dependency>
+
 
   </dependencies>
 
@@ -165,17 +172,33 @@
         </configuration>
       </plugin>
       <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>test-jar</goal>
+                  </goals>
+              </execution>
+          </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.19</version>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.0.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
         <configuration>
-          <argLine>-Xmx2G -XX:MaxPermSize=1G -XX:-UseSplitVerifier</argLine>
-          <failIfNoTests>false</failIfNoTests>
-          <parallel>classesAndMethods</parallel>
-          <useUnlimitedThreads>true</useUnlimitedThreads>
-          <reportFormat>plain</reportFormat>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
       </plugin>
+
     </plugins>
     <finalName>customer_handler</finalName>
   </build>
