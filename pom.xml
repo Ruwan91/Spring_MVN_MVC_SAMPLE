@@ -154,19 +154,6 @@
 
   <build>
     <plugins>
-
-      <plugin>
-        <groupId>org.eclipse.jetty</groupId>
-        <artifactId>jetty-maven-plugin</artifactId>
-        <version>9.4.5.v20180619</version>
-        <configuration>
-          <scanIntervalSeconds>10</scanIntervalSeconds>
-          <webApp>
-            <contextPath>/</contextPath>
-          </webApp>
-        </configuration>
-      </plugin>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
@@ -175,6 +162,18 @@
           <warSourceDirectory>src/main/webapp</warSourceDirectory>
           <warName>customer_handler</warName>
           <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19</version>
+        <configuration>
+          <argLine>-Xmx2G -XX:MaxPermSize=1G -XX:-UseSplitVerifier</argLine>
+          <failIfNoTests>false</failIfNoTests>
+          <parallel>classesAndMethods</parallel>
+          <useUnlimitedThreads>true</useUnlimitedThreads>
+          <reportFormat>plain</reportFormat>
         </configuration>
       </plugin>
     </plugins>
