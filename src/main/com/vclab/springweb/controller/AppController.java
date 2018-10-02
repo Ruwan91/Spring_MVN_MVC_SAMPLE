@@ -1,17 +1,22 @@
 package com.vclab.springweb.controller;
 
+import com.google.gson.Gson;
 import com.vclab.springweb.model.Customer;
 import com.vclab.springweb.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/test")
@@ -49,7 +54,7 @@ public class AppController {
 
     //Calling to the get request to get all customer details
     @RequestMapping(value = {"/allcustomers"},method = RequestMethod.GET)
-    public List getAllCustomer(){
+    public ArrayList<ModelMap> getAllCustomer(){
         ArrayList<Customer> customers=(ArrayList<Customer>) customerService.getAllCustomers();
         ArrayList<ModelMap> modelMaps=new ArrayList<ModelMap>();
         ModelMap map=new ModelMap();
@@ -68,5 +73,7 @@ public class AppController {
             return modelMaps;
         }
     }
+
+
 
 }
