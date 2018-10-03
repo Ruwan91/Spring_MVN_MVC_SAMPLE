@@ -1,11 +1,12 @@
 package com.vclab.springweb.controller;
 
-import com.vclab.springweb.configuration.TestBeanConfig;
+import com.vclab.springweb.configuration.BeanConfigTest;
 import com.vclab.springweb.model.Customer;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -17,7 +18,8 @@ import java.util.Map;
 
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {TestBeanConfig.class})
+@ContextConfiguration(classes = {BeanConfigTest.class})
+@ComponentScan(basePackages = {"com"})
 public class CustomerControllerTest {
 
     @Autowired
@@ -51,7 +53,7 @@ public class CustomerControllerTest {
     }
 
     @Test
-    public void saveCustomerTest(Customer cust) {
+    public void saveCustomerTest() {
         ArrayList<Customer> allCustomers = getAllCustomers();
         Customer customer=new Customer();
         customer.setCid(5);
