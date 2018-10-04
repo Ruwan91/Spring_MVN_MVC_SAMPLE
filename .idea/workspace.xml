@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e62f072d-7a2f-44d0-9577-94863d725b11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/com/vclab/springweb/dao/CustomerDAOImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/HibernateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/HibernateConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/vclab/springweb/service/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/vclab/springweb/service/CustomerServiceTest.java" afterDir="false" />
     </list>
@@ -27,105 +28,79 @@
     <session id="1248310304">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.53" value="2" />
           <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.82" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="14" />
-          <entry key="java" value="235" />
+          <entry key="class" value="15" />
+          <entry key="java" value="253" />
           <entry key="jsp" value="11" />
-          <entry key="properties" value="14" />
-          <entry key="xml" value="27" />
+          <entry key="properties" value="17" />
+          <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="14" />
-          <entry key="JAVA" value="235" />
+          <entry key="CLASS" value="15" />
+          <entry key="JAVA" value="253" />
           <entry key="JSP" value="11" />
-          <entry key="Properties" value="14" />
-          <entry key="XML" value="27" />
+          <entry key="Properties" value="17" />
+          <entry key="XML" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="24" />
-          <entry key="java" value="5756" />
+          <entry key="java" value="7410" />
           <entry key="jsp" value="474" />
-          <entry key="properties" value="35" />
+          <entry key="properties" value="49" />
           <entry key="txt" value="16" />
-          <entry key="xml" value="306" />
+          <entry key="xml" value="308" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5756" />
+          <entry key="JAVA" value="7410" />
           <entry key="JSP" value="474" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Properties" value="35" />
-          <entry key="XML" value="306" />
+          <entry key="Properties" value="49" />
+          <entry key="XML" value="308" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/service/CustomerServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/HibernateConfiguration.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/dao/CustomerDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="418">
+              <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/model/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-              <folding>
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -135,6 +110,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -150,6 +126,7 @@
       <find>hibernate-core</find>
       <find>jdbc</find>
       <find>mysql-connector-java</find>
+      <find>CID</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\hp\Documents\ng-demo-master\customer_handler\src</dir>
@@ -192,16 +169,18 @@
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/controller/AppController.java" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/dao/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/service/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/com/vclab/springweb/controller/CustomerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/com/vclab/springweb/service/CustomerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/AppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/dao/CustomerDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/HibernateConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/com/vclab/springweb/configuration/H2Config.java" />
         <option value="$PROJECT_DIR$/src/test/com/vclab/springweb/service/CustomerServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/com/vclab/springweb/dao/CustomerDAOImplTest.java" />
       </list>
     </option>
   </component>
@@ -324,23 +303,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="customer_handler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="customer_handler" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="customer_handler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="customer_handler" type="616d4139:PackageViewModuleNode" />
-              <item name="webapp.WEB-INF.views" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,45 +320,6 @@
               <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="springweb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="springweb" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="springweb" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="springweb" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="springweb" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
@@ -424,7 +347,39 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="springweb" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="springweb" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customer_handler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customer_handler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="customer_handler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="customer_handler" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="customer_handler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="customer_handler" type="616d4139:PackageViewModuleNode" />
+              <item name="webapp.WEB-INF.views" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -433,7 +388,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538566190831" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538653079859" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -474,20 +429,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceTest">
-    <configuration name="CustomerServiceTest.validateCustomerTestPositive" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CustomerDAOImplTest.checkH2DBAndsetupTest">
+    <configuration name="CustomerDAOImplTest.checkH2DBAndsetupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customer_handler" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vclab.springweb.service.*" />
+          <option name="PATTERN" value="com.vclab.springweb.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.vclab.springweb.service" />
-      <option name="MAIN_CLASS_NAME" value="com.vclab.springweb.service.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="validateCustomerTestPositive" />
+      <option name="PACKAGE_NAME" value="com.vclab.springweb.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.vclab.springweb.dao.CustomerDAOImplTest" />
+      <option name="METHOD_NAME" value="checkH2DBAndsetupTest" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerDAOImplTest.saveCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="customer_handler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vclab.springweb.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vclab.springweb.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.vclab.springweb.dao.CustomerDAOImplTest" />
+      <option name="METHOD_NAME" value="saveCustomer" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -506,7 +476,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.saveCustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceTest.cutomerH2DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customer_handler" />
       <extension name="coverage">
         <pattern>
@@ -516,13 +486,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.vclab.springweb.service" />
       <option name="MAIN_CLASS_NAME" value="com.vclab.springweb.service.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="saveCustomerTest" />
+      <option name="METHOD_NAME" value="cutomerH2DatabaseTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.validateCustomerTestPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceTest.saveCustomerTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customer_handler" />
       <extension name="coverage">
         <pattern>
@@ -532,42 +502,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.vclab.springweb.service" />
       <option name="MAIN_CLASS_NAME" value="com.vclab.springweb.service.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="validateCustomerTestPositive" />
+      <option name="METHOD_NAME" value="saveCustomerTestCase" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceImplTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="customer_handler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vclab.springweb.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vclab.springweb.service" />
-      <option name="MAIN_CLASS_NAME" value="com.vclab.springweb.service.CustomerServiceImplTest" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CustomerServiceImplTest" />
-      <item itemvalue="JUnit.CustomerServiceTest.validateCustomerTestPositive" />
       <item itemvalue="JUnit.CustomerServiceTest" />
-      <item itemvalue="Android JUnit.CustomerServiceTest.validateCustomerTestPositive" />
-      <item itemvalue="JUnit.CustomerServiceTest.saveCustomerTest" />
+      <item itemvalue="JUnit.CustomerServiceTest.cutomerH2DatabaseTest" />
+      <item itemvalue="JUnit.CustomerServiceTest.saveCustomerTestCase" />
+      <item itemvalue="JUnit.CustomerDAOImplTest.saveCustomer" />
+      <item itemvalue="JUnit.CustomerDAOImplTest.checkH2DBAndsetupTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerDAOImplTest.checkH2DBAndsetupTest" />
+        <item itemvalue="JUnit.CustomerServiceTest.saveCustomerTestCase" />
+        <item itemvalue="JUnit.CustomerDAOImplTest.saveCustomer" />
+        <item itemvalue="JUnit.CustomerServiceTest.cutomerH2DatabaseTest" />
         <item itemvalue="JUnit.CustomerServiceTest" />
-        <item itemvalue="JUnit.CustomerServiceTest.saveCustomerTest" />
-        <item itemvalue="Android JUnit.CustomerServiceTest.validateCustomerTestPositive" />
-        <item itemvalue="JUnit.CustomerServiceTest.validateCustomerTestPositive" />
-        <item itemvalue="TestNG.CustomerServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -593,35 +547,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 26m 10s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_saveCustomerTestCase - 2018.10.04 at 16h 50m 09s.xml">
+      <configuration name="CustomerServiceTest.saveCustomerTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 26m 29s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_saveCustomer - 2018.10.04 at 16h 52m 53s.xml">
+      <configuration name="CustomerDAOImplTest.saveCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 27m 56s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_saveCustomer - 2018.10.04 at 16h 53m 37s.xml">
+      <configuration name="CustomerDAOImplTest.saveCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 29m 47s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_saveCustomer - 2018.10.04 at 16h 54m 26s.xml">
+      <configuration name="CustomerDAOImplTest.saveCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_validateCustomerTestPositive - 2018.10.03 at 16h 35m 21s.xml">
-      <configuration name="CustomerServiceTest.validateCustomerTestPositive" configurationId="AndroidJUnit" />
+    <history-entry file="CustomerServiceTest_saveCustomerTestCase - 2018.10.04 at 16h 55m 38s.xml">
+      <configuration name="CustomerServiceTest.saveCustomerTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 45m 07s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_checkH2DBAndsetupTest - 2018.10.04 at 16h 59m 05s.xml">
+      <configuration name="CustomerDAOImplTest.checkH2DBAndsetupTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 52m 20s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_checkH2DBAndsetupTest - 2018.10.04 at 16h 59m 53s.xml">
+      <configuration name="CustomerDAOImplTest.checkH2DBAndsetupTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_validateCustomerTestPositive - 2018.10.03 at 16h 53m 50s.xml">
-      <configuration name="CustomerServiceTest.validateCustomerTestPositive" configurationId="AndroidJUnit" />
+    <history-entry file="CustomerDAOImplTest_checkH2DBAndsetupTest - 2018.10.04 at 17h 04m 12s.xml">
+      <configuration name="CustomerDAOImplTest.checkH2DBAndsetupTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_saveCustomerTest - 2018.10.03 at 16h 56m 54s.xml">
-      <configuration name="CustomerServiceTest.saveCustomerTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_checkH2DBAndsetupTest - 2018.10.04 at 17h 05m 46s.xml">
+      <configuration name="CustomerDAOImplTest.checkH2DBAndsetupTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest - 2018.10.03 at 16h 58m 47s.xml">
-      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    <history-entry file="CustomerDAOImplTest_checkH2DBAndsetupTest - 2018.10.04 at 17h 07m 31s.xml">
+      <configuration name="CustomerDAOImplTest.checkH2DBAndsetupTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -637,7 +591,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -646,7 +600,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33551556" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34369886" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.19312602" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -674,30 +628,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Testing Changes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/Mock.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/controller/CustomerTestCase.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE.jar!/org/springframework/validation/BindingResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/config/TestBeanConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.0.6.RELEASE/spring-core-4.0.6.RELEASE.jar!/org/springframework/core/env/PropertyResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/Customer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -749,7 +679,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/configuration/HibernateTestConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/controller/AppControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/dao/EntityDaoImplTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/dao/CustomerDaoImplTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/custome_reg.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -782,9 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,37 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/service/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../working/samplepro/src/main/java/com/dao/AbstractDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -888,6 +783,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/service/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/AppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -897,36 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/controller/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
+        <state relative-caret-position="366">
           <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-          <folding>
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/HibernateConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,10 +825,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/configuration/HibernateConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#495#525#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+          <folding>
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/dao/CustomerDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="90" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="90" />
+        <state relative-caret-position="85">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
@@ -959,22 +910,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/vclab/springweb/dao/CustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="34">
+          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/configuration/H2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="78" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/service/CustomerServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/vclab/springweb/dao/CustomerDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
           </folding>
         </state>
       </provider>
