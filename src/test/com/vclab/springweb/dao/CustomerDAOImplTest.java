@@ -1,15 +1,22 @@
 package com.vclab.springweb.dao;
 
+import com.sun.swing.internal.plaf.basic.resources.basic_es;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(loader = AnnotationConfigContextLoader.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CustomerDAOImplTest {
     private final Integer CID = 1;
