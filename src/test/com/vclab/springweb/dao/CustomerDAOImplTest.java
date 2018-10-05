@@ -55,9 +55,10 @@ public class CustomerDAOImplTest {
             Class.forName("org.h2.Driver");
             Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "ruwan", "vclab");
             int i = conn.createStatement().executeUpdate(sql);
+            long startTime2=System.currentTimeMillis();
             int i1 = conn.createStatement().executeUpdate(sql1);
-            Assert.assertTrue(i > 0);
-            Assert.assertTrue(i1 > 0);
+            Assert.assertTrue("Customer "+CID+" is insert sucessfully ",i > 0);
+            Assert.assertTrue("Customer "+CID1+" is insert sucessfully ",i1 > 0);
             conn.close();
         } catch (SQLException | ClassNotFoundException se) {
             Logger.getLogger(String.valueOf(se));
