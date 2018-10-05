@@ -24,7 +24,7 @@ public class CustomerDAOImplTest {
     private final String NIC1 = "789456123V";
 
     @Test
-    public void aCheckH2DBAndsetupTest() {
+    public void test1CheckH2DBAndsetup() {
         String sql1 = "DROP TABLE IF EXISTS customer";
         String sql2 = "CREATE TABLE customer (cid INT PRIMARY KEY, name VARCHAR(200),address VARCHAR(200),nic VARCHAR(11),active TINYINT(4))";
         try {
@@ -41,7 +41,7 @@ public class CustomerDAOImplTest {
     }
 
     @Test
-    public void bestSaveCustomerTestCase() {
+    public void test2SaveCustomer() {
         String sql = "INSERT INTO customer VALUES(" + CID + ",'" + NAME + "','" + ADDRESS + "','" + NIC + "'," + STATUS + ")";
         String sql1 = "INSERT INTO customer VALUES(" + CID1 + ",'" + NAME1 + "','" + ADDRESS1 + "','" + NIC1 + "'," + STATUS + ")";
         try {
@@ -59,7 +59,7 @@ public class CustomerDAOImplTest {
     }
 
     @Test
-    public void callGetAllCustomersTestCase() {
+    public void test3GetAllCustomersTestCase() {
         String sql = "SELECT * FROM customer";
         try {
             Class.forName("org.h2.Driver");
@@ -73,7 +73,7 @@ public class CustomerDAOImplTest {
     }
 
     @Test
-    public void deleteCustomerTestCase() {
+    public void test4deleteCustomerTestCase() {
         String sql="DELETE FROM customer where cid="+ CID1;
         try {
             Class.forName("org.h2.Driver");
@@ -87,7 +87,7 @@ public class CustomerDAOImplTest {
     }
 
     @Test
-    public void findCustomerByIdTestCase() {
+    public void test5FindCustomerByIdTestCase() {
         String sql="SELCT * FROM customer where cid="+ CID;
         try {
             Class.forName("org.h2.Driver");
@@ -101,7 +101,7 @@ public class CustomerDAOImplTest {
     }
 
     @Test
-    public void updateCustomerTestCase() {
+    public void test6UpdateCustomerTestCase() {
         String nic = "777777777V";
         String sql="UPDATE customer SET nic='"+nic+"' WHERE cid="+CID;
         try {

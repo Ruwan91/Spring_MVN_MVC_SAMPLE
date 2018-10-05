@@ -7,7 +7,7 @@ import org.junit.Test;
 public class CustomerServiceTest {
 
     @Test
-    public void saveCustomerTestCase(){
+    public void tset1saveCustomerTestCase(){
         System.out.println("On testing..");
     }
 
