@@ -1,6 +1,7 @@
 package com.vclab.springweb.dao;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +30,7 @@ public class CustomerDAOImplTest {
     private final String ADDRESS1 = "Panadura";
     private final String NIC1 = "789456123V";
 
-    @Test
+    @Before
     public void test1CheckH2DBAndsetup() {
         String sql1 = "DROP TABLE IF EXISTS customer";
         String sql2 = "CREATE TABLE customer (cid INT PRIMARY KEY, name VARCHAR(200),address VARCHAR(200),nic VARCHAR(11),active TINYINT(4))";
@@ -62,7 +63,6 @@ public class CustomerDAOImplTest {
         } catch (SQLException | ClassNotFoundException se) {
             Logger.getLogger(String.valueOf(se));
         }
-
     }
 
     @Test
