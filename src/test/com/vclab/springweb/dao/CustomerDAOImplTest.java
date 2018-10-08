@@ -1,11 +1,15 @@
 package com.vclab.springweb.dao;
 
+import com.vclab.springweb.model.Customer;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
@@ -30,6 +34,25 @@ public class CustomerDAOImplTest {
     private final String ADDRESS1 = "Panadura";
     private final String NIC1 = "789456123V";
 
+    @Configuration
+    static class ContextConfiguration{
+        @Bean
+        public Customer customer(){
+            Customer customer=new Customer();
+            customer.setCid(1);
+            customer.setName("Ruwan Peiris");
+            customer.setAddress("Moratuwa");
+            customer.setNic("123456789V");
+            customer.setActive(true);
+            return customer;
+        }
+    }
+
+    @Autowired
+    Customer customer;
+
+    
+
     @Before
     public void test1CheckH2DBAndsetup() {
         String sql1 = "DROP TABLE IF EXISTS customer";
@@ -49,7 +72,7 @@ public class CustomerDAOImplTest {
 
     @Test
     public void test2SaveCustomer() {
-        String sql = "INSERT INTO customer VALUES(" + CID + ",'" + NAME + "','" + ADDRESS + "','" + NIC + "'," + STATUS + ")";
+        String sql = "INSERT INTO customer VALUES(" + customer.getCid()  + ",'" + customer.getName() + "','" + customer.getAddress() + "','" + customer.getNic() + "'," + customer.getActive() + ")";
         String sql1 = "INSERT INTO customer VALUES(" + CID1 + ",'" + NAME1 + "','" + ADDRESS1 + "','" + NIC1 + "'," + STATUS + ")";
         try {
             Class.forName("org.h2.Driver");
