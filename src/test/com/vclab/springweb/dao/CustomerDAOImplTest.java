@@ -1,6 +1,5 @@
 package com.vclab.springweb.dao;
 
-import com.sun.swing.internal.plaf.basic.resources.basic_es;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -55,10 +54,10 @@ public class CustomerDAOImplTest {
             Class.forName("org.h2.Driver");
             Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "ruwan", "vclab");
             int i = conn.createStatement().executeUpdate(sql);
-            long startTime2=System.currentTimeMillis();
+            long startTime2 = System.currentTimeMillis();
             int i1 = conn.createStatement().executeUpdate(sql1);
-            Assert.assertTrue("Customer "+CID+" is insert sucessfully ",i > 0);
-            Assert.assertTrue("Customer "+CID1+" is insert sucessfully ",i1 > 0);
+            Assert.assertTrue("Customer " + CID + " is insert sucessfully ", i > 0);
+            Assert.assertTrue("Customer " + CID1 + " is insert sucessfully ", i1 > 0);
             conn.close();
         } catch (SQLException | ClassNotFoundException se) {
             Logger.getLogger(String.valueOf(se));
@@ -71,39 +70,39 @@ public class CustomerDAOImplTest {
         String sql = "SELECT * FROM customer";
         try {
             Class.forName("org.h2.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","ruwan", "vclab");
+            Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "ruwan", "vclab");
             int i = conn.createStatement().executeUpdate(sql);
-            Assert.assertTrue(i > 0 );
+            Assert.assertTrue(i > 0);
             conn.close();
-        }catch (SQLException| ClassNotFoundException e){
+        } catch (SQLException | ClassNotFoundException e) {
             Logger.getLogger(String.valueOf(e));
         }
     }
 
     @Test
     public void test4deleteCustomerTestCase() {
-        String sql="DELETE FROM customer where cid="+ CID1;
+        String sql = "DELETE FROM customer where cid=" + CID1;
         try {
             Class.forName("org.h2.Driver");
             Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "ruwan", "vclab");
             int i = conn.createStatement().executeUpdate(sql);
             Assert.assertTrue(i > 0);
             conn.close();
-        }catch (ClassNotFoundException | SQLException e){
+        } catch (ClassNotFoundException | SQLException e) {
             Logger.getLogger(String.valueOf(e));
         }
     }
 
     @Test
     public void test5FindCustomerByIdTestCase() {
-        String sql="SELCT * FROM customer where cid="+ CID;
+        String sql = "SELCT * FROM customer where cid=" + CID;
         try {
             Class.forName("org.h2.Driver");
             Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "ruwan", "vclab");
             int i = conn.createStatement().executeUpdate(sql);
-            Assert.assertTrue(i > 0 );
+            Assert.assertTrue(i > 0);
             conn.close();
-        }catch (ClassNotFoundException | SQLException e){
+        } catch (ClassNotFoundException | SQLException e) {
             Logger.getLogger(String.valueOf(e));
         }
     }
@@ -111,16 +110,16 @@ public class CustomerDAOImplTest {
     @Test
     public void test6UpdateCustomerTestCase() {
         String nic = "777777777V";
-        String sql="UPDATE customer SET nic='"+nic+"' WHERE cid="+CID;
+        String sql = "UPDATE customer SET nic='" + nic + "' WHERE cid=" + CID;
         try {
             Class.forName("org.h2.Driver");
             Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "ruwan", "vclab");
             int i = conn.createStatement().executeUpdate(sql);
             Assert.assertTrue(i > 0);
-            Assert.assertFalse(i < 1 );
-            Assert.assertEquals(1,i);
+            Assert.assertFalse(i < 1);
+            Assert.assertEquals(1, i);
             conn.close();
-        }catch (ClassNotFoundException | SQLException e){
+        } catch (ClassNotFoundException | SQLException e) {
             Logger.getLogger(String.valueOf(e));
         }
     }

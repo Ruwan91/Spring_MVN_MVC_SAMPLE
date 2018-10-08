@@ -20,54 +20,53 @@ public class AppController {
     CustomerService customerService;
 
     @RequestMapping("/home")
-    public String home(){
+    public String home() {
         return "home";
     }
 
-    @RequestMapping(value = {"/customer"},method = RequestMethod.GET)
-    public String getNewCustomerForm(ModelMap model){
-       Customer customer=new Customer();
-       model.addAttribute("customer", customer);
-       model.addAttribute("edit",false);
-       return "custome_reg";
+    @RequestMapping(value = {"/customer"}, method = RequestMethod.GET)
+    public String getNewCustomerForm(ModelMap model) {
+        Customer customer = new Customer();
+        model.addAttribute("customer", customer);
+        model.addAttribute("edit", false);
+        return "custome_reg";
     }
 
 
     //Calling to the post request to save customer details form submission time
-    @RequestMapping(value = {"/save_customer"},method = RequestMethod.POST)
+    @RequestMapping(value = {"/save_customer"}, method = RequestMethod.POST)
     public String saveNewCustomer(@Valid Customer customer, BindingResult result,
-                                  ModelMap model){
-        if(result.hasErrors()){
+                                  ModelMap model) {
+        if (result.hasErrors()) {
             return "home";
-        }else {
+        } else {
             customerService.saveCustomer(customer);
-            model.addAttribute("success","Customer "+ customer.getName()+" saved successfully...");
+            model.addAttribute("success", "Customer " + customer.getName() + " saved successfully...");
             return "custome_reg";
         }
     }
 
     //Calling to the get request to get all customer details
-    @RequestMapping(value = {"/allcustomers"},method = RequestMethod.GET)
-    public ArrayList<ModelMap> getAllCustomer(){
-        ArrayList<Customer> customers=(ArrayList<Customer>) customerService.getAllCustomers();
-        ArrayList<ModelMap> modelMaps=new ArrayList<ModelMap>();
-        ModelMap map=new ModelMap();
-        if(customers.isEmpty()){
+    @RequestMapping(value = {"/allcustomers"}, method = RequestMethod.GET)
+    public ArrayList<ModelMap> getAllCustomer() {
+        ArrayList<Customer> customers = (ArrayList<Customer>) customerService.getAllCustomers();
+        ArrayList<ModelMap> modelMaps = new ArrayList<ModelMap>();
+        ModelMap map = new ModelMap();
+        if (customers.isEmpty()) {
 //            map.addAttribute("customerlist",null);
             return modelMaps;
-        }else{
-            for (Customer customer:customers) {
-                map.addAttribute("cid",customer.getCid());
-                map.addAttribute("name",customer.getName());
-                map.addAttribute("address",customer.getAddress());
-                map.addAttribute("nic",customer.getNic());
-                map.addAttribute("status",customer.getActive());
+        } else {
+            for (Customer customer : customers) {
+                map.addAttribute("cid", customer.getCid());
+                map.addAttribute("name", customer.getName());
+                map.addAttribute("address", customer.getAddress());
+                map.addAttribute("nic", customer.getNic());
+                map.addAttribute("status", customer.getActive());
                 modelMaps.add(map);
             }
             return modelMaps;
         }
     }
-
 
 
 }

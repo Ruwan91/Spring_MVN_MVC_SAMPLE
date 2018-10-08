@@ -77,6 +77,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer ["+cid+"-"+name+"-"+nic+"]";
+        return "Customer [" + cid + "-" + name + "-" + nic + "]";
     }
 }

@@ -17,19 +17,19 @@ public class CustomerDaoImpl extends AbstractDao<Integer, Customer> implements C
 
     @SuppressWarnings("unchecked")
     public List<Customer> getAllCustomers() {
-        Criteria criteria=getSession().createCriteria(Customer.class);
+        Criteria criteria = getSession().createCriteria(Customer.class);
         return (List<Customer>) criteria.list();
     }
 
     public void deleteCustomer(int id) {
-        Query query= getSession().createSQLQuery("DELETE FROM customer c WHERE c.cid = :id");
-        query.setInteger("cid",id);
+        Query query = getSession().createSQLQuery("DELETE FROM customer c WHERE c.cid = :id");
+        query.setInteger("cid", id);
         query.executeUpdate();
     }
 
     public Customer findCustomerById(int id) {
-        Criteria criteria=getSession().createCriteria(Customer.class);
-        criteria.add(Restrictions.eq("cid",id));
+        Criteria criteria = getSession().createCriteria(Customer.class);
+        criteria.add(Restrictions.eq("cid", id));
         return (Customer) criteria.uniqueResult();
     }
 

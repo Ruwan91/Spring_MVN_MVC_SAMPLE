@@ -64,7 +64,7 @@ public class Log {
 
     @Override
     public String toString() {
-        return "Log["+logid+"-"+detail+"-"+dateTime+"-"+customer+"]";
+        return "Log[" + logid + "-" + detail + "-" + dateTime + "-" + customer + "]";
     }
 
 
